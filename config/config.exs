@@ -7,6 +7,11 @@
 # General application configuration
 import Config
 
+config :ash, :use_all_identities_in_manage_relationship?, false
+
+config :phoenix_helpdesk,
+  ash_apis: [PhoenixHelpdesk.Support]
+
 config :phoenix_helpdesk,
   ecto_repos: [PhoenixHelpdesk.Repo]
 
